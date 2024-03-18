@@ -25,19 +25,25 @@ class Listas: UIViewController {
         //        }
         //    }
         
-        let array = ["a", "b", "c"]
-        for i in array{
-            if(i == "b"){
-                print(i)
-            }
-        }
-        
-        for i in 0..<v2 {
-            print(i)
-        }
-        
-        for i in 0..<array.count {
-            print(i)
-        }
+//        let array = ["a", "b", "c"]
+//        for i in array{
+//            if(i == "b"){
+//                print(i)
+//            }
+//        }
+//        
+//        for i in 0..<v2 {
+//            print(i)
+//        }
+//        
+//        for i in 0..<array.count {
+//            print(i)
+//        }
+//        let vermelho = UIColor.red
+        let global = Global()
+        let altura = global.carregarDicionario(medida: "altura")
+        print(altura)
     }
+    
+    
 }

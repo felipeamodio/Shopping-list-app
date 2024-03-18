@@ -13,6 +13,7 @@
 		8266078D2B9F8F260092B798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8266078C2B9F8F260092B798 /* Assets.xcassets */; };
 		826607902B9F8F260092B798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8266078E2B9F8F260092B798 /* LaunchScreen.storyboard */; };
 		826607982B9F959B0092B798 /* Listas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826607972B9F959B0092B798 /* Listas.swift */; };
+		826B85702BA8E21F00B46392 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826B856F2BA8E21F00B46392 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8266078F2B9F8F260092B798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		826607912B9F8F260092B798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		826607972B9F959B0092B798 /* Listas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listas.swift; sourceTree = "<group>"; };
+		826B856F2BA8E21F00B46392 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				826607832B9F8F250092B798 /* AppDelegate.swift */,
 				826607852B9F8F250092B798 /* SceneDelegate.swift */,
 				826607972B9F959B0092B798 /* Listas.swift */,
+				826B856F2BA8E21F00B46392 /* Global.swift */,
 				826607892B9F8F250092B798 /* Main.storyboard */,
 				8266078C2B9F8F260092B798 /* Assets.xcassets */,
 				8266078E2B9F8F260092B798 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826B85702BA8E21F00B46392 /* Global.swift in Sources */,
 				826607842B9F8F250092B798 /* AppDelegate.swift in Sources */,
 				826607982B9F959B0092B798 /* Listas.swift in Sources */,
 				826607862B9F8F250092B798 /* SceneDelegate.swift in Sources */,
