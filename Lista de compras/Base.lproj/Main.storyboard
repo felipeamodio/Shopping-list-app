@@ -16,18 +16,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBa-zF-Rc9">
+                                <rect key="frame" x="16" y="155" width="361" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="sp3-ZJ-uom"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmb-R0-ReN">
+                                <rect key="frame" x="16" y="241" width="361" height="46"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="7MA-ed-Bpy"/>
+                                    <constraint firstAttribute="height" constant="46" id="PNT-Ye-JKa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ENVIAR">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enviarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUR-cR-Gtw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex: 123456" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZC-pr-13T">
+                                <rect key="frame" x="16" y="199" width="361" height="34"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8lista100" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-FJ-dcK">
+                                <rect key="frame" x="76" y="406" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gZC-pr-13T" firstAttribute="top" secondItem="BBa-zF-Rc9" secondAttribute="bottom" constant="8" symbolic="YES" id="0zo-TM-Q2E"/>
+                            <constraint firstItem="dmb-R0-ReN" firstAttribute="leading" secondItem="BBa-zF-Rc9" secondAttribute="leading" id="EyW-8P-BGx"/>
+                            <constraint firstItem="dmb-R0-ReN" firstAttribute="top" secondItem="gZC-pr-13T" secondAttribute="bottom" constant="8" symbolic="YES" id="KqY-GS-2yE"/>
+                            <constraint firstItem="BBa-zF-Rc9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Lkq-Qe-Urv"/>
+                            <constraint firstItem="gZC-pr-13T" firstAttribute="leading" secondItem="BBa-zF-Rc9" secondAttribute="leading" id="Spk-VB-fiA"/>
+                            <constraint firstItem="dmb-R0-ReN" firstAttribute="firstBaseline" secondItem="BBa-zF-Rc9" secondAttribute="baseline" constant="34.333333333333329" symbolType="layoutAnchor" id="Xxp-Qk-5LG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BBa-zF-Rc9" secondAttribute="trailing" constant="16" id="l1c-0y-cHS"/>
+                            <constraint firstItem="BBa-zF-Rc9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="250" constant="96" id="rcO-75-zbn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alturaLabel" destination="BBa-zF-Rc9" id="eYz-mp-lLc"/>
+                        <outlet property="alturaTextField" destination="gZC-pr-13T" id="HpJ-b7-s0W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112" y="-11"/>
+            <point key="canvasLocation" x="-112.21374045801527" y="-11.267605633802818"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icons8lista100" width="33.333332061767578" height="33.333332061767578"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

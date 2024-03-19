@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Altura"; ObjectID = "BBa-zF-Rc9"; */
+"BBa-zF-Rc9.text" = "Altura";
+
+/* Class = "UIButton"; configuration.title = "ENVIAR"; ObjectID = "dmb-R0-ReN"; */
+"dmb-R0-ReN.configuration.title" = "ENVIAR";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dmb-R0-ReN"; */
+"dmb-R0-ReN.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Ex: 123456"; ObjectID = "gZC-pr-13T"; */
+"gZC-pr-13T.placeholder" = "Ex: 123456";

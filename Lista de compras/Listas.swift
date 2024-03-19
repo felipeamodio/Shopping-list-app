@@ -8,12 +8,15 @@
 import Foundation
 import UIKit
 
-class Listas: UIViewController {
+class Listas: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var alturaLabel: UILabel!
+    @IBOutlet weak var alturaTextField: UITextField!
     var v1 = 3
     var v2 = 5
     let v3 = 9
     
     override func viewDidLoad() {
+        alturaTextField.delegate = self //self é a classe
         print(v1)
         NSLog("Resultado: %i", v1)
         //        if(v1 < v2){
@@ -45,5 +48,18 @@ class Listas: UIViewController {
         print(altura)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        alturaLabel.textColor = UIColor.init(named: "colorBlue")
+        alturaLabel.text = NSLocalizedString("altura", comment: "")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            alturaTextField .resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func enviarButton(_ sender: Any) {
+        alturaLabel.textColor = .black
+    }
     
 }
